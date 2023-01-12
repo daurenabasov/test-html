@@ -1,0 +1,73 @@
+#section-variety {
+  background-image: url("../assets/hero/variety.png");
+  height: 1200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  background-size: cover;
+}
+#section-variety > .container-variety {
+  padding: 73px 75px;
+  background: #cccfd8;
+  max-width: 600px;
+  max-height: 690px;
+  display: flex;
+  float: right;
+  margin-right: 140px;
+  margin-top: 15%;
+}
+#section-variety div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#section-variety div > h1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+
+#section-variety div > p {
+  /* Text/18 Regular */
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* Black/Black */
+
+  color: #100e18;
+
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 715px) {
+  .container-variety {
+    min-height: 1000px;
+    float: none !important;
+  }
+}
+@media screen and (max-width: 570px) {
+  .container-variety {
+    min-height: 1100px;
+
+    width: 100%;
+    display: flex;
+    float: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,79 @@
+#subhero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 180px 1rem 0 1rem;
+}
+
+#subhero > h3 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  /* identical to box height, or 182% */
+
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+
+  /* Black/Gray */
+  text-align: center;
+
+  color: #8a8a8a;
+}
+
+#subhero > p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  text-align: center;
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+
+#subhero > button {
+  width: 264px;
+  height: 76px;
+  cursor: pointer;
+
+  /* Yelow */
+
+  background: #faff05;
+
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+
+  /* Black/Black */
+
+  color: #100e18;
+  border: none;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1310px) {
+  #subhero > p {
+    font-size: 28px !important;
+    line-height: 30px !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #subhero > p {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}

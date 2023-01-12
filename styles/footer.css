@@ -1,0 +1,151 @@
+#footer {
+  max-width: 100%;
+  background: #100e18;
+  min-height: 600px;
+}
+
+#footer > .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 1176px) {
+  #footer > .footer-container {
+    padding: 2rem 9rem 0rem 9rem;
+    display: flex;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #footer > .footer-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 90px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
+#footer > .footer-container > .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 21.45px;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* White */
+
+  color: #ffffff;
+  margin-bottom: 104px;
+}
+#footer > .footer-container > nav {
+  display: flex;
+  align-items: center;
+}
+
+#footer > .footer-container > nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+#footer > .footer-container > nav a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+#footer > .footer-container > nav a:hover {
+  color: #c3140f;
+  transition: 0.9s;
+}
+#footer > .footer-container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 105px;
+}
+
+#footer > .footer-container > ul a {
+  /* TextCaps/16 Regular */
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#footer > .footer-container > ul a:hover {
+  color: #c3140f;
+  transition: 0.9s;
+}
+
+#footer > .footer-container > nav:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+#footer > .footer-container > nav:nth-child(4) {
+  margin-bottom: 155px;
+}
+
+#footer > .footer-subcontainer > hr {
+  border: 1px solid #8a8a8a;
+  max-width: 95%;
+  height: 0px;
+  margin: 90px auto;
+}
+
+#footer > .footer-subcontainer > ul {
+  /* TextCaps/16 Regular */
+  display: flex;
+  max-width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 51px;
+flex-wrap: wrap;
+gap: 10px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* Black/Gray */
+
+  color: #8a8a8a;
+}

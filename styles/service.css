@@ -1,0 +1,130 @@
+#services {
+  background: #fff;
+  height: 1500px;
+}
+
+#services > .services-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#services > .services-titles > h3 {
+  /* LabelText/22 Regular */
+  margin-top: 180px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  /* identical to box height, or 182% */
+
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  text-align: center;
+  /* Black/Gray */
+
+  color: #8a8a8a;
+}
+
+#services > .services-titles > p {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+@media screen and (max-width: 430px) {
+#services > .services-titles > p {
+  line-height: 40px;
+  font-size: 40px;
+}
+}
+
+#services > .services-titles > button {
+  width: 280px;
+  height: 76px;
+  border: none;
+
+  /* Yelow */
+
+  background: #faff05; /* Button text/Button Text */
+
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+
+  /* Black/Black */
+
+  color: #100e18;
+  margin: 0 auto;
+}
+
+.progress-container {
+  margin-top: 120px;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #c3140f;
+  width: 0%;
+}
+
+.services-images {
+  margin-top: 80px;
+  width: 500px;
+  height: 100vw;
+  transform: rotate(-90deg) translateY(-500px);
+  transform-origin: top right;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.services-images div {
+  width: 100%;
+  height: 500px;
+  transform: rotate(90deg);
+  position: relative;
+  margin: 10px 0;
+}
+
+.services-images > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-images > div > p {
+  /* TextCaps/18 Medium */
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* Black/Black */
+
+  color: #100e18;
+}

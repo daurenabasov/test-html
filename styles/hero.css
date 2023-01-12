@@ -1,0 +1,123 @@
+#hero {
+  height: 960px;
+  background: #c3140f;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: -1;
+  padding: 0 1rem 0 1rem;
+}
+#hero > img {
+  max-width: 100%;
+  position: absolute;
+  top: 47%;
+  z-index: -10;
+  padding: 0px 10% 0 20%;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 214px;
+  gap: 60px;
+}
+
+.left-container > p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+.left-container > hr {
+  width: 100px;
+  height: 0px;
+  border: 1px solid #faff05;
+}
+.left-container > .hero-text {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.left-container > button {
+  width: 229px;
+  height: 76px;
+  cursor: pointer;
+
+  /* Yelow */
+
+  background: #faff05;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+
+  /* Black/Black */
+
+  color: #100e18;
+  border: none;
+}
+
+.right-container {
+  margin-top: 210px;
+  max-width: 635px;
+  max-height: 750px;
+  border: 50px solid #faff05;
+}
+
+@media screen and (max-width: 960px) {
+  #hero .hero-text {
+    font-size: 50px;
+  }
+  .left-container {
+    position: absolute;
+    z-index: 100;
+  }
+  .right-container {
+    position: relative;
+    z-index: -100;
+  }
+}
+.right-container > img {
+  margin-top: -17rem;
+}
+
+@media screen and (max-width: 600px) {
+  .left-container {
+    top: 30px;
+  }
+  .right-container {
+    border: 20px solid #faff05;
+    height: 570px;
+  }
+  .right-container > img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  #hero span {
+    font-size: 40px !important;
+    font-weight: 300 !important;
+  }
+  .right-container {
+    border: 15px solid #faff05;
+  }
+  .right-container > img {
+    width: 300px;
+    margin-top: -70px;
+  }
+}

@@ -1,0 +1,118 @@
+#section-condition {
+  background-image: url("../assets/hero/condition.png");
+  height: 1200px;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 180px;
+}
+
+@media screen and (max-width: 400px) {
+  #section-condition {
+    height: 1500px !important;
+  }
+}
+#section-condition > .opacity-block {
+  padding: 50px;
+}
+#section-condition > .opacity-block > h1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* or 111% */
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+#section-condition > .opacity-block > span {
+  /* Text/18 Regular */
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* Black/Gray */
+
+  color: #8a8a8a;
+}
+
+#section-condition > .yellow-block {
+  background: #faff05;
+  padding: 50px;
+  height: 436px;
+  max-width: 420px;
+}
+
+@media screen and (max-width: 450px) {
+  #section-condition > .yellow-block {
+    max-width: 100%;
+    min-height: 500px;
+  }
+}
+
+#section-condition .yellow-block > h1 {
+  /* Title/36 Bold */
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* or 111% */
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+
+#section-condition .yellow-block > span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+
+#section-condition .yellow-block > h4 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+
+  letter-spacing: 5px;
+  text-transform: capitalize;
+
+  /* Red/Red */
+
+  color: #c4140f;
+  margin-top: 40px;
+}
+#section-condition .yellow-block > h4::after {
+  content: url("../assets/hero/Arrow.png");
+  padding: 20px 0px 0px 22px;
+}

@@ -1,0 +1,45 @@
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./subhero.css);
+@import url(./section-condition.css);
+@import url(./section-variety.css);
+@import url(./service.css);
+@import url(./footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=K2D:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  transition: 1.5s ease;
+}
+
+:where(a, ul, li) {
+  text-decoration: none;
+  list-style: none;
+}
+
+button:hover {
+  background: #c3140f;
+  box-shadow: 0px 15px 20px rgba(26, 27, 14, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}

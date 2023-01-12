@@ -1,0 +1,237 @@
+#header {
+  max-width: 100%;
+  background: #fff;
+}
+
+#header > .top-header {
+  background: #faff05;
+  min-height: 40px;
+}
+#header > .top-header > p {
+  text-align: center;
+  padding-top: 8px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  text-transform: capitalize;
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+
+#header > .bottom-header {
+  background-color: #ffffff;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+#header .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  /* identical to box height */
+
+  /* Black/Black */
+
+  color: #100e18;
+}
+#header .header-nav {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  height: 120px;
+}
+
+#header .header-nav > li > a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+
+  /* Black/Black */
+
+  color: #100e18;
+
+  /* Inside auto layout */
+
+  position: relative;
+}
+
+#header .header-nav > li > a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #c4140f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#header .header-nav > li > a:hover:after {
+  width: 100%;
+  left: 0;
+}
+#header .header-nav > li > a sup {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-transform: capitalize;
+
+  /* Red/Red */
+
+  color: #c4140f;
+}
+
+#header .header-helpers ul {
+  display: flex;
+  gap: 36.18px;
+  align-items: center;
+}
+
+.header-burger {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .bottom-header nav {
+    display: none;
+  }
+  .bottom-header .header-helpers {
+    display: none;
+  }
+  .bottom-header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .header-burger {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50%;
+  }
+
+  #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: -60px;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #c3140f 0%, #c3140f 100%);
+  }
+  .sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .sidebarMenuInner li:nth-child(6) {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+  .sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+  }
+
+  input[type="checkbox"] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 99;
+    height: 22px;
+    width: 22px;
+  }
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    height: 3px;
+    width: 130%;
+    background: #c4140f;
+  }
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+  }
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+}
